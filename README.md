@@ -7,7 +7,7 @@ Welcome to my personal website project! This site showcases my skills, projects,
 
 ## Resume
 
-You can view or download my resume here: [My Resume](https://your-resume-link.com)
+You can view or download my resume here: [My Resume](https://drive.google.com/file/d/1dc7jvmVX7mVd3abj_1MXKq-ZtMVojgA0/view?usp=sharing)
 
 ---
 
@@ -44,4 +44,4 @@ uvicorn main:app --reload
 This project is deployed on Render
 
 ## Open your browser at:
-[LINK]()
+[LINK](https://me-api-playground-yr1e.onrender.com/)
