@@ -1,4 +1,4 @@
-const BASE = "http://127.0.0.1:8000";
+const BASE = "https://me-api-playground-yr1e.onrender.com";
 
 async function loadProfile() {
   const res = await fetch(BASE + "/profile");
