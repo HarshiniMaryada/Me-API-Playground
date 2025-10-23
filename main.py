@@ -9,11 +9,6 @@ import sqlite3, json, os
 #app.mount("/static", StaticFiles(directory="static"), name="static")
 #templates = Jinja2Templates(directory="templates")
 
-import os
-from fastapi import FastAPI
-from fastapi.staticfiles import StaticFiles
-from fastapi.templating import Jinja2Templates
-
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 app = FastAPI(title="Me-API Playground")
