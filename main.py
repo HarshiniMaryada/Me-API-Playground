@@ -17,7 +17,7 @@ app.mount("/static", StaticFiles(directory=os.path.join(BASE_DIR, "static")), na
 templates = Jinja2Templates(directory=os.path.join(BASE_DIR, "templates"))
 
 
-DB_PATH = "profile.db"
+DB_PATH = os.path.join(BASE_DIR, "profile.db")
 
 def get_db():
     conn = sqlite3.connect(DB_PATH)
@@ -115,6 +115,10 @@ def search(q: str = ""):
     results += [{"type": "skill", "item": s} for s in skills if q in s.lower()]
     results += [{"type": "project", "item": p["title"]} for p in projects if q in p["title"].lower()]
     return {"results": results}
+@app.get("/debug/files")
+def list_files():
+    files = os.listdir(os.getcwd())
+    return {"cwd": os.getcwd(), "files": files}
 
 @app.get("/", response_class=HTMLResponse)
 def home(request: Request):
