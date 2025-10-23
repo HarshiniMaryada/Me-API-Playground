@@ -1,0 +1,29 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Me-API Playground</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <h1>Me-API Playground</h1>
+
+  <section id="profile">Loading...</section>
+
+
+  <section>
+    <h2>Search</h2>
+    <input id="query" placeholder="search..." />
+    <button onclick="doSearch()">Search</button>
+    <div id="searchResults"></div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div id="projects"></div>
+  </section>
+
+  <script src="/static/api.js"></script>
+</body>
+</html>
